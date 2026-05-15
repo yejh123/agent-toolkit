@@ -12,7 +12,7 @@ I built these plugins for my daily workflow — they cover everything from multi
 | `claude-note` | Knowledge capture from papers, lectures, talks, tech docs, and math (English) |
 | `claude-note-cn` | Same as claude-note, with Chinese output |
 | `claude-paper` | Academic research pipeline: literature search, paper drafting, pre-submission review |
-| `claude-logistics` | Operational logistics: Google Forms creation via Apps Script, survey design |
+| `claude-logistics` | Operational logistics: Google Forms, PowerPoint presentations, Excel spreadsheets |
 
 ## Highlights
 
@@ -21,23 +21,63 @@ I built these plugins for my daily workflow — they cover everything from multi
 - **`/note-paper`** converts paper PDFs into comprehensive, structured reading notes
 - **`/paper-write`** drafts full conference papers (NeurIPS, ICML, ICLR, ACL) with LaTeX formatting
 
-## Quick Start
+## Installation
+
+### From GitHub (recommended)
+
+Add the marketplace and install individual plugins — no cloning required:
+
+```
+/plugin marketplace add yejh123/claude-toolkit
+```
+
+Then install the plugins you want:
+
+```
+/plugin install claude-dev@claude-toolkit
+/plugin install claude-note@claude-toolkit
+/plugin install claude-note-cn@claude-toolkit
+/plugin install claude-paper@claude-toolkit
+/plugin install claude-logistics@claude-toolkit
+```
+
+### From a local clone
+
+If you prefer to work from a local copy:
 
 ```bash
 git clone https://github.com/yejh123/claude-toolkit.git
-cd claude-toolkit
-python3 install.py install
 ```
 
 Then in Claude Code:
 
 ```
-/reload-plugins
-/plugin install claude-dev@local-plugins
-/plugin install claude-note@local-plugins
-/plugin install claude-paper@local-plugins
-/plugin install claude-logistics@local-plugins
+/plugin marketplace add ./claude-toolkit
+/plugin install claude-dev@claude-toolkit
 ```
+
+### Managing plugins
+
+Browse and manage installed plugins:
+
+```
+/plugin
+```
+
+Update marketplace to get the latest versions:
+
+```
+/plugin marketplace update claude-toolkit
+/reload-plugins
+```
+
+Uninstall a plugin:
+
+```
+/plugin uninstall claude-dev@claude-toolkit
+```
+
+> See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins) for the full reference on marketplace management.
 
 ## Skill Reference
 
@@ -57,6 +97,10 @@ Then in Claude Code:
 | `dev-review-pr` | `/claude-dev:dev-review-pr` | Comprehensive PR review with specialized agents |
 | `dev-codebase` | `/claude-dev:dev-codebase` | Codebase comprehension and documentation |
 | `dev-web-test` | `/claude-dev:dev-web-test` | Web app testing with Playwright (screenshots, logs, automation) |
+| `dev-blurb` | `/claude-dev:dev-blurb` | Product descriptions and copywriting |
+| `dev-product-spec` | `/claude-dev:dev-product-spec` | Product specification writing |
+| `dev-pydantic` | `/claude-dev:dev-pydantic` | Pydantic v2 model architecture and validators |
+| `dev-python-test` | `/claude-dev:dev-python-test` | Python test development |
 
 ### Agents
 
@@ -123,6 +167,8 @@ Then in Claude Code:
 | Skill | Invoke | Description |
 |-------|--------|-------------|
 | `google-form` | `/claude-logistics:google-form` | Google Forms creation via Apps Script |
+| `pptx` | `/claude-logistics:pptx` | PowerPoint presentation creation |
+| `xlsx` | `/claude-logistics:xlsx` | Excel spreadsheet creation |
 
 </details>
 

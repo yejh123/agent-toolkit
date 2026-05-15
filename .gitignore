@@ -1,4 +1,11 @@
-.DS_Store
-__pycache__/
-*.pyc
+.worktrees/
+.private-journal/
 .claude/
+.DS_Store
+node_modules/
+inspo
+triage/
+
+# Superpowers
+docs/superpowers/
+c

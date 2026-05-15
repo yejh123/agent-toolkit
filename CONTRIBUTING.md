@@ -9,7 +9,7 @@ Thanks for your interest in contributing to claude-toolkit!
 3. Run `/reload-plugins` in Claude Code to pick up the new skill
 4. Test it with `/<plugin-name>:<skill-name>`
 
-See the [Claude Code plugin docs](https://docs.anthropic.com/en/docs/claude-code/plugins) for the full skill specification.
+See the [Claude Code plugin docs](https://code.claude.com/docs/en/plugins) for the full skill specification.
 
 ## Reporting Issues
 
