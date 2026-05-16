@@ -1,6 +1,6 @@
 ---
 name: note-paper-cn
-description: 用于从学术论文创建详尽的中文翻译解读笔记。当用户提供论文 PDF、arXiv 链接、或要求撰写论文笔记时，使用此技能。触发关键词包括"论文笔记"、"论文解读"、"paper note"、"paper review"、"读论文"、"arXiv"。
+description: 用于从学术论文创建详尽的中文翻译解读笔记。当用户提供论文 PDF、arXiv 链接、或要求撰写论文笔记时，使用此技能。触发关键词包括"论文笔记"、"论文解读"、"paper note"、"paper review"、"读论文"、"arXiv"。区别于 note-math-cn：本技能保留原论文结构逐段翻译 + 注解；若是数学纯理论论文且目标为重写以理解为目的（非翻译），改用 note-math-cn。
 allowed-tools: Bash(*), Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, Agent, Skill
 ---
 
