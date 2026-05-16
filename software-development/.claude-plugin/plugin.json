@@ -1,5 +1,5 @@
 {
-  "name": "claude-dev",
+  "name": "software-development",
   "version": "2.0.1",
   "description": "Software development skills: debugging, TDD, code review, FastAPI, Pydantic model architecture, project planning, feature development, PR review, frontend design, codebase comprehension, and product blurbs and copy. Includes specialized agents for code architecture, exploration, review, simplification, and analysis.",
   "author": {

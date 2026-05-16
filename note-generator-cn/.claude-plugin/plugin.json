@@ -1,5 +1,5 @@
 {
-  "name": "claude-note-cn",
+  "name": "note-generator-cn",
   "version": "1.0.0",
   "description": "中文笔记技能：将论文、研究博客、课程、演讲、技术文档和数学内容转化为结构化学习笔记。",
   "author": {

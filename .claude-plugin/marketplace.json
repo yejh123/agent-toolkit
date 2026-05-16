@@ -1,13 +1,13 @@
 {
-  "name": "claude-toolkit",
-  "description": "Curated Claude Code plugins for development, note-taking, and academic writing",
+  "name": "agent-toolkit",
+  "description": "Curated Claude Code plugins for software development, knowledge capture, research writing, and office automation",
   "owner": {
     "name": "Jingheng Ye"
   },
   "plugins": [
     {
-      "name": "claude-dev",
-      "source": "./claude-dev",
+      "name": "software-development",
+      "source": "./software-development",
       "description": "Software development skills: debugging, TDD, code review, FastAPI, Pydantic, project planning, feature development, PR review, frontend design, codebase comprehension, and product blurbs.",
       "version": "2.0.1",
       "author": {
@@ -15,36 +15,36 @@
       }
     },
     {
-      "name": "claude-note",
-      "source": "./claude-note",
-      "description": "Knowledge capture skills for converting papers, lectures, talks, tech docs, and math into structured study notes.",
+      "name": "note-generator",
+      "source": "./note-generator",
+      "description": "Knowledge capture skills for converting papers, lectures, talks, tech docs, and math into structured study notes (English).",
       "version": "1.0.0",
       "author": {
         "name": "Jingheng Ye"
       }
     },
     {
-      "name": "claude-note-cn",
-      "source": "./claude-note-cn",
-      "description": "中文笔记技能：将论文、课程、演讲、技术文档和数学内容转化为结构化学习笔记。",
+      "name": "note-generator-cn",
+      "source": "./note-generator-cn",
+      "description": "中文笔记技能：将论文、研究博客、课程、演讲、技术文档和数学内容转化为结构化学习笔记。",
       "version": "1.0.0",
       "author": {
         "name": "Jingheng Ye"
       }
     },
     {
-      "name": "claude-paper",
-      "source": "./claude-paper",
-      "description": "Academic research and writing pipeline: literature search, paper drafting, and pre-submission review.",
-      "version": "1.0.0",
+      "name": "research",
+      "source": "./research",
+      "description": "Academic research and writing pipeline: research proposal drafting, related-work document construction, and ML/AI paper writing.",
+      "version": "0.1.0",
       "author": {
         "name": "Jingheng Ye"
       }
     },
     {
-      "name": "claude-logistics",
-      "source": "./claude-logistics",
-      "description": "Operational logistics skills: Google Forms creation, PowerPoint presentations, and Excel spreadsheets.",
+      "name": "daily-logistics",
+      "source": "./daily-logistics",
+      "description": "Operational logistics skills: Google Forms creation via Apps Script, PowerPoint presentations, and Excel spreadsheets.",
       "version": "1.0.0",
       "author": {
         "name": "Jingheng Ye"

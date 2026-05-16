@@ -1,5 +1,5 @@
 {
-  "name": "claude-note",
+  "name": "note-generator",
   "version": "1.0.0",
   "description": "Knowledge capture skills for converting papers, lectures, talks, tech docs, and math into structured study notes.",
   "author": {
