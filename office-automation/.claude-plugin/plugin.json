@@ -1,0 +1,10 @@
+{
+  "name": "office-automation",
+  "version": "1.0.0",
+  "description": "Office automation skills: Google Forms creation via Apps Script, PowerPoint presentations, and Excel spreadsheets.",
+  "author": {
+    "name": "Jingheng Ye"
+  },
+  "license": "MIT",
+  "keywords": ["google-forms", "apps-script", "powerpoint", "pptx", "excel", "xlsx", "office", "automation"]
+}

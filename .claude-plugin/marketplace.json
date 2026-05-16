@@ -1,15 +1,15 @@
 {
   "name": "agent-toolkit",
-  "description": "Curated Claude Code plugins for software development, knowledge capture, research writing, and office automation",
+  "description": "Curated Claude Code plugins for academic research writing, knowledge capture, software development, and office automation",
   "owner": {
     "name": "Jingheng Ye"
   },
   "plugins": [
     {
-      "name": "software-development",
-      "source": "./software-development",
-      "description": "Software development skills: debugging, TDD, code review, FastAPI, Pydantic, project planning, feature development, PR review, frontend design, codebase comprehension, and product blurbs.",
-      "version": "2.0.1",
+      "name": "research",
+      "source": "./research",
+      "description": "Academic research and writing pipeline: research proposal drafting, related-work document construction, and ML/AI paper writing.",
+      "version": "0.1.0",
       "author": {
         "name": "Jingheng Ye"
       }
@@ -33,18 +33,18 @@
       }
     },
     {
-      "name": "research",
-      "source": "./research",
-      "description": "Academic research and writing pipeline: research proposal drafting, related-work document construction, and ML/AI paper writing.",
-      "version": "0.1.0",
+      "name": "software-development",
+      "source": "./software-development",
+      "description": "Software development skills: debugging, TDD, code review, FastAPI, Pydantic, project planning, feature development, PR review, frontend design, codebase comprehension, and product blurbs.",
+      "version": "2.0.1",
       "author": {
         "name": "Jingheng Ye"
       }
     },
     {
-      "name": "daily-logistics",
-      "source": "./daily-logistics",
-      "description": "Operational logistics skills: Google Forms creation via Apps Script, PowerPoint presentations, and Excel spreadsheets.",
+      "name": "office-automation",
+      "source": "./office-automation",
+      "description": "Office automation skills: Google Forms creation via Apps Script, PowerPoint presentations, and Excel spreadsheets.",
       "version": "1.0.0",
       "author": {
         "name": "Jingheng Ye"
