@@ -1,45 +1,68 @@
-# agent-toolkit
+<p align="center">
+  <img src="assets/logo.png" alt="agent-toolkit logo" width="160">
+</p>
 
-A curated collection of Claude Code plugins for software development, knowledge capture, research writing, and office automation.
+<h1 align="center">agent-toolkit</h1>
 
-Each plugin is standalone and can be installed independently — pick the subset you need.
+<p align="center">
+  <strong>Curated Claude Code plugins for software development, knowledge capture, research writing, and office automation.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+  <img src="https://img.shields.io/badge/plugins-5-brightgreen" alt="5 plugins">
+  <img src="https://img.shields.io/badge/skills-30-brightgreen" alt="30 skills">
+  <img src="https://img.shields.io/badge/Claude%20Code-marketplace-orange" alt="Claude Code marketplace">
+</p>
+
+Five standalone Claude Code plugins under one marketplace. Install only the subset you need — each plugin is self-contained and works independently.
+
+## Quickstart
+
+In Claude Code, register the marketplace and install a plugin:
+
+```
+/plugin marketplace add yejh123/agent-toolkit
+/plugin install software-development@agent-toolkit
+```
+
+That's it. The full plugin catalog is below; the [Installation](#installation) section covers managing, updating, and local-clone install.
 
 ## What's Inside
 
-| Plugin | Purpose |
-|--------|---------|
-| [`software-development`](#software-development) | Feature dev, code review, PR review, frontend design, web testing, codebase docs |
-| [`note-generator`](#note-generator) | Knowledge capture from papers, lectures, talks, tech docs, and math (English) |
-| [`note-generator-cn`](#note-generator-cn) | Same coverage as `note-generator` + research blogs, with Chinese output |
-| [`research`](#research) | Academic research writing: proposal drafting, related-work synthesis, paper writing |
-| [`daily-logistics`](#daily-logistics) | Office automation: Google Forms, PowerPoint, Excel |
+| Plugin | Purpose | Skills |
+|---|---|---|
+| [`software-development`](#software-development) | Feature dev, code review, PR review, frontend design, web testing, codebase docs | 13 |
+| [`note-generator`](#note-generator) | Knowledge capture from papers, lectures, talks, tech docs, math (English) | 5 |
+| [`note-generator-cn`](#note-generator-cn) | Same coverage + research blogs, with Chinese output | 6 |
+| [`research`](#research) | Academic research writing: proposal, related work, paper drafting | 3 |
+| [`daily-logistics`](#daily-logistics) | Office automation: Google Forms, PowerPoint, Excel | 3 |
 
 ## Highlights
 
-- **`/software-development:dev-review-pr`** launches 6 specialized agents (code reviewer, comment analyzer, test analyzer, type design analyzer, simplifier, silent failure hunter) for comprehensive PR review
-- **`/software-development:dev-feature`** guides you through a 7-phase development workflow: discovery, exploration, clarification, architecture, implementation, review, summary
-- **`/note-generator:note-paper`** converts paper PDFs into comprehensive, structured reading notes
-- **`/research:paper-write`** drafts full conference papers (NeurIPS, ICML, ICLR, ACL) with LaTeX formatting
+- **`/software-development:dev-review-pr`** — launches 6 specialized review agents (code reviewer, comment analyzer, test analyzer, type design analyzer, simplifier, silent failure hunter) for comprehensive PR review
+- **`/software-development:dev-feature`** — guided 7-phase feature development: discovery → exploration → clarification → architecture → implementation → review → summary
+- **`/note-generator:note-paper`** — convert paper PDFs into structured reading notes with figure preservation and section-by-section translation
+- **`/note-generator-cn:note-blog-cn`** — convert research blogs (Anthropic / OpenAI / DeepMind / Schmidt) into 中文 notes with structured summaries
+- **`/research:paper-write`** — draft full conference papers (NeurIPS, ICML, ICLR, ACL) with LaTeX templates, reviewer guidelines, and citation verification
 
 ## Installation
-
-All five plugins live in one repository under a shared marketplace named `agent-toolkit`. Register the marketplace once, then install only the plugins you want.
 
 ### Option A — From GitHub (recommended)
 
 Register the marketplace (no cloning required):
 
 ```
-/plugin marketplace add yejh123/claude-toolkit
+/plugin marketplace add yejh123/agent-toolkit
 ```
 
 Equivalent full-URL form:
 
 ```
-/plugin marketplace add https://github.com/yejh123/claude-toolkit.git
+/plugin marketplace add https://github.com/yejh123/agent-toolkit.git
 ```
 
-Then install plugins individually (any subset):
+Install any subset of plugins:
 
 ```
 /plugin install software-development@agent-toolkit
@@ -52,7 +75,7 @@ Then install plugins individually (any subset):
 ### Option B — From a local clone
 
 ```bash
-git clone https://github.com/yejh123/claude-toolkit.git agent-toolkit
+git clone https://github.com/yejh123/agent-toolkit.git
 ```
 
 Then in Claude Code (from any working directory):
@@ -72,7 +95,7 @@ Then in Claude Code (from any working directory):
 
 > See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins) for the full reference.
 
-## Skill Reference
+## Plugin Reference
 
 ### software-development
 
