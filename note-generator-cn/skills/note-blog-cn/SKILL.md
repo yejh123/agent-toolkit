@@ -106,8 +106,8 @@ blog 翻译全部完成后，填充 §6 的扩展 I-IV。
 [发布组织 YYYYMM] blog 标题.md
 ```
 
-- **发布组织缩写 + 年月**：例 `[Anthropic 202509] Building Effective AI Agents.md`、`[OpenAI 202403] Sora.md`、`[Schmidt 202410] Trustworthy AI Research Agenda.md`、`[DeepMind 202506] Gemini Robotics.md`
-- **个人 blog**：发布组织替换为作者姓氏，如 `[Karpathy 202403] LLM Knowledge Compilation.md`
+- **发布组织缩写 + 年月**：例 `[Anthropic 202509] Building Effective AI Agents.md`
+- **个人 blog**：发布组织替换为作者姓氏，例 `[Karpathy 202403] LLM Knowledge Compilation.md`
 - **标题中冒号**：使用全角冒号 `：`
 
 ### 3.2 元信息（紧跟主标题）
@@ -415,16 +415,12 @@ blog 中的代码示例完整还原为带语言标识的代码块。代码块前
 
 每写完一节，按以下勾选项立即自检；本节不涉及的检查项可标 N/A：
 
-- [ ] 本节 Figure 数量与原 blog 该节一致（清点编号）
-- [ ] 本节 Table 数量与原 blog 该节一致（清点编号）
+- [ ] 本节 Figure / Table 数量与原 blog 该节一致（按清单清点编号）
 - [ ] 本节段落与原文逐段对齐，无遗漏 / 无合并 / 无摘要化
-- [ ] 本节编号公式已用 LaTeX 排版；行内公式符号未丢失
-- [ ] 本节代码片段已完整还原（代码块 + 语言标识）
-- [ ] 本节脚注已以括注形式保留
-- [ ] 本节超链接已保留，链接文本已翻译为中文
+- [ ] 本节编号公式已用 LaTeX 排版（行内公式符号未丢失）；代码片段已完整还原（代码块 + 语言标识）
+- [ ] 本节脚注以括注形式保留；超链接已保留，链接文本已翻译为中文
 - [ ] 本节嵌入资源（视频 / Demo / Tweet / Playground / Audio / 3D / iframe）已用 `[类型：标题](URL)` + 文字描述呈现，未尝试 iframe
-- [ ] 本节涉及的 blog 特殊结构元素（Highlights / TOC / Acknowledgments / Citation block）已按 §5.8 规则保留
-- [ ] 本节已过滤非内容性元素（CTA / subscribe / nav / footer / 社交分享）按 §5.9
+- [ ] 本节涉及的 blog 特殊结构元素（Highlights / TOC / Acknowledgments / Citation block）已按 §5.8 规则保留；非内容性元素（CTA / subscribe / nav / footer / 社交分享）按 §5.9 过滤
 - [ ] 本节注解均以 `>` 引用块形式紧跟所注释段落，未混入翻译正文
 - [ ] 本节专业术语首现附英文原文
 - [ ] 本节标点正确（中文语境全角，英文 / 代码 / 公式内部半角）
@@ -436,23 +432,18 @@ blog 中的代码示例完整还原为带语言标识的代码块。代码块前
 所有节都通过 §8 之后，对全文执行：
 
 - [ ] 全文顺序符合 §3.0（主标题 → 元信息 → blog 概述 → 结构化总结 → blog 原文翻译 → 扩展 I-IV）
-- [ ] **全文 Figure 总数 = 原 blog Figure 总数**（按 §2.1 清单逐张核对）
-- [ ] **全文 Table 总数 = 原 blog Table 总数**（按 §2.1 清单逐张核对）
+- [ ] 全文 Figure / Table 总数 = 原 blog Figure / Table 总数（按 §2.1 清单逐张核对）；所有图片 URL 已验证可访问（§2.2 阶段 B 验证步骤）
 - [ ] §3.2 元信息 9 必填字段齐备（标题 / 作者 / 发布组织 / 发布日期 / 原文 URL / 领域 / 关键词 / 关联论文 / 博客类型）；blog 自带的可选字段（分类标签 / 代码仓库 / 附录 PDF / 所属系列）已填入或确认 blog 无该元素
 - [ ] 主标题（中英）+ blog 概述（2-3 段）齐备
-- [ ] §3.6 结构化总结齐备，所选模板字段全部存在；所有 bullet 携带 `(§n)` 章节引用并已对照原文核实
-- [ ] blog 自带的特殊结构元素（Highlights / TL;DR 块、TOC、Acknowledgments、Citation block / BibTeX、Related content sidebar、Appendix PDF 链接）已按 §5.8 规则保留 / §3.2 元信息填入 / §6.4 扩展 IV 纳入；blog 不具备的元素跳过
-- [ ] 文档章节编号和标题与原 blog 严格对应（无跳级、无重编）
-- [ ] 扩展 I-IV 齐备，或对缺失者明确注明原因
-- [ ] 扩展章节与 blog 翻译部分在标题前缀（"扩展 I-IV"）上有明确区分
-- [ ] 跨节专业术语翻译一致
-- [ ] 所有图片 URL 已验证可访问（§2.2 阶段 B 验证步骤）
+- [ ] §3.6 结构化总结所选模板字段齐备；所有 bullet 携带 `(§n)` 章节引用并已对照原文核实
+- [ ] blog 自带的特殊结构元素（Highlights / TL;DR、TOC、Acknowledgments、Citation block / BibTeX、Related content sidebar、Appendix PDF 链接）已按 §5.8 / §3.2 / §6.4 处理；blog 不具备的元素跳过
+- [ ] 文档章节编号和标题与原 blog 严格对应（无跳级、无重编）；扩展 I-IV 齐备（或对缺失者明确注明原因），并与 blog 翻译部分在标题前缀（"扩展 I-IV"）上有明确区分
+- [ ] 全文已过滤非内容性元素（CTA / subscribe / nav / footer / 社交分享 / cookie banner）（§5.9）
+- [ ] 无翻译失真（推测变肯定 / 语气过度强化 / 偏离原意）；无空泛注解（"很有创新性"类无信息评价）
+- [ ] 跨节专业术语翻译一致（同一英文术语全文同一中译）
 - [ ] 中英文标点使用正确（全角 / 半角分区）
-- [ ] 全文无残留 emoji（注解仅用文字标签）
+- [ ] 全文无残留 emoji
 - [ ] 全文无非 blog 原表的 Markdown 表格（结构化内容用加粗-冒号 + 项目列表）
-- [ ] 全文已过滤非内容性元素（CTA / subscribe / nav / footer / 社交分享 / cookie banner）
-- [ ] 无翻译失真（推测变肯定 / 语气过度强化 / 偏离原意）
-- [ ] 无空泛注解（"很有创新性"类无信息评论）
 - [ ] 用 Read 工具从头通读一次，确认可作为 blog 原文的**完整中文替代**
 
 终稿审查中发现的任何问题必须当场修正，不可搁置。
