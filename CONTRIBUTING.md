@@ -1,13 +1,13 @@
 # Contributing
 
-Thanks for your interest in contributing to claude-toolkit!
+Thanks for your interest in contributing to agent-toolkit!
 
 ## Adding a Skill
 
-1. Create a directory under the appropriate plugin: `claude-<plugin>/skills/<skill-name>/`
-2. Add a `SKILL.md` with YAML frontmatter (`name`, `description`) and the skill prompt
+1. Create a directory under the appropriate plugin: `<plugin>/skills/<skill-name>/` (e.g. `software-development/skills/my-skill/`)
+2. Add a `SKILL.md` with YAML frontmatter (`name`, `description`) and the skill prompt; `name` must match the directory name
 3. Run `/reload-plugins` in Claude Code to pick up the new skill
-4. Test it with `/<plugin-name>:<skill-name>`
+4. Test it with `/<plugin>:<skill-name>`
 
 See the [Claude Code plugin docs](https://code.claude.com/docs/en/plugins) for the full skill specification.
 

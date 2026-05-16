@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Conventions for the claude-toolkit plugin collection. Follow these when adding or editing skills, agents, or commands.
+Conventions for the agent-toolkit plugin collection. Follow these when adding or editing skills, agents, or commands.
 
 ## Repository Structure
 
@@ -13,8 +13,8 @@ Conventions for the claude-toolkit plugin collection. Follow these when adding o
     assets/                         # Templates, static files (optional)
     examples/                       # Example code (optional)
     scripts/                        # Helper scripts (optional)
-  agents/{name}.md                  # Agent definitions (claude-dev only)
-  commands/{name}.md                # Slash commands (claude-dev only)
+  agents/{name}.md                  # Agent definitions (software-development only)
+  commands/{name}.md                # Slash commands (software-development only)
 ```
 
 ## plugin.json
@@ -35,7 +35,7 @@ Required fields: `name`, `version` (semver), `description`, `author.name`, `lice
 
 Standard body sections, in order: H1 title, Quick Start, Trigger Conditions, Core Workflow, Output Format, Quality Standards. Omit sections that don't apply.
 
-## Agents (claude-dev only)
+## Agents (software-development only)
 
 - **`name`** (required) — kebab-case role name
 - **`description`** (required) — when to use, with examples
@@ -44,7 +44,7 @@ Standard body sections, in order: H1 title, Quick Start, Trigger Conditions, Cor
 - `tools` — comma-separated tool list
 - `source` — URL to original Anthropic plugin
 
-## Commands (claude-dev only)
+## Commands (software-development only)
 
 - **`allowed-tools`** (required) — granular Bash permissions (e.g. `Bash(git add:*), Bash(git commit:*)`)
 - **`description`** (required) — short action description

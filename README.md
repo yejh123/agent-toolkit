@@ -2,10 +2,10 @@
   <img src="assets/logo.png" alt="agent-toolkit" width="160">
 </p>
 
-<h1 align="center">agent-toolkit</h1>
+<h1 align="center">Agent Toolkit</h1>
 
 <p align="center">
-  <strong>Five Claude Code plugins for coding, note-taking, research writing, and office automation.</strong>
+  <strong>Agent plugins for coding, note-taking, research execution, and office automation.</strong>
 </p>
 
 <p align="center">
@@ -14,6 +14,13 @@
   <img src="https://img.shields.io/badge/skills-30-brightgreen" alt="30 skills">
   <img src="https://img.shields.io/badge/Claude%20Code-marketplace-orange" alt="Claude Code marketplace">
 </p>
+
+A Claude Code plugin marketplace I use for my own research and engineering workflow. Five plugins, packaged separately so you can install only what you need:
+
+- **`software-development`** writes, reviews, and ships code: debugging, TDD, PR review, frontend design, codebase comprehension.
+- **`note-generator`** and **`note-generator-cn`** turn papers, research blogs, talks, course materials, and math topics into structured study notes (English and 中文).
+- **`research`** runs an academic writing pipeline: research proposal, related work, then full conference paper drafting (NeurIPS / ICML / ICLR / ACL).
+- **`daily-logistics`** automates office artifacts: Google Forms, PowerPoint, Excel.
 
 ## Install
 
@@ -125,7 +132,7 @@ See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins)
 | Skill | Invoke | Description |
 |---|---|---|
 | `note-paper-cn` | `/note-generator-cn:note-paper-cn` | 论文 PDF → 翻译解读笔记 |
-| `note-blog-cn` | `/note-generator-cn:note-blog-cn` | 研究博客 → 翻译解读笔记（Anthropic / OpenAI / DeepMind / Schmidt） |
+| `note-blog-cn` | `/note-generator-cn:note-blog-cn` | 研究博客 → 翻译解读笔记 |
 | `note-course-cn` | `/note-generator-cn:note-course-cn` | 多源课程材料 → 学习笔记 |
 | `note-talk-cn` | `/note-generator-cn:note-talk-cn` | 单场演讲转写 → 学术笔记 |
 | `note-dev-cn` | `/note-generator-cn:note-dev-cn` | 开源工具 / 开发概念 → 教学文档 |
@@ -180,4 +187,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE)
+MIT License. See LICENSE for details.

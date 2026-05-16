@@ -134,7 +134,7 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 **Before committing:**
 ```
 1. Write code
-2. Run: /claude-dev:dev-review-pr (focus on code and errors)
+2. Run: /software-development:dev-review-pr (focus on code and errors)
 3. Fix any critical issues
 4. Commit
 ```
@@ -142,7 +142,7 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 **Before creating PR:**
 ```
 1. Stage all changes
-2. Run: /claude-dev:dev-review-pr (full review)
+2. Run: /software-development:dev-review-pr (full review)
 3. Address all critical and important issues
 4. Run specific reviews again to verify
 5. Create PR
