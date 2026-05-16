@@ -88,12 +88,12 @@ f. **立刻执行 §8 per-section checkpoint**，通过则进入下一节；失�
 演讲笔记的文件命名格式：
 
 ```
-[日期 主题关键词] 演讲者姓名.md
+[YYYYMMDD 演讲者全名] 主题.md
 ```
 
-- **日期**：YYYYMMDD 格式
-- **主题关键词**：简短英文描述演讲核心主题
-- 例：`[20260209 User Simulation] Nicholas.md`
+- **YYYYMMDD**：演讲日期（8 位完整日期）
+- **演讲者全名**：尽量使用全名以消歧；多位演讲者用 `&` 连接
+- 例：`[20260209 Nicholas Carlini] User Simulation.md`
 
 ### 3.2 主标题
 
