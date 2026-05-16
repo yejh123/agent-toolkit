@@ -75,7 +75,7 @@ See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins)
 ### research
 
 <details>
-<summary>3 skills · academic writing</summary>
+<summary>3 skills · Academic writing</summary>
 
 | Skill | Description |
 |---|---|
@@ -103,7 +103,7 @@ See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins)
 ### note-generator-cn
 
 <details>
-<summary>6 skills · 中文笔记</summary>
+<summary>6 skills · Chinese notes</summary>
 
 | Skill | Description |
 |---|---|
@@ -164,7 +164,7 @@ See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins)
 ### office-automation
 
 <details>
-<summary>3 skills · office automation</summary>
+<summary>3 skills · Office automation</summary>
 
 | Skill | Description |
 |---|---|
