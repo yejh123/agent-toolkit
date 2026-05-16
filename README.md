@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Claude%20Code-marketplace-orange" alt="Claude Code marketplace">
 </p>
 
-A Claude Code plugin marketplace I use for my own research and engineering workflow. Five plugins, packaged separately so you can install only what you need:
+A Claude Code plugin marketplace I use for my own research and engineering workflow. Five plugins are packaged separately so you can install only what you need:
 
 - **`software-development`** writes, reviews, and ships code: debugging, TDD, PR review, frontend design, codebase comprehension.
 - **`note-generator`** and **`note-generator-cn`** turn papers, research blogs, talks, course materials, and math topics into structured study notes (English and 中文).
@@ -26,20 +26,22 @@ A Claude Code plugin marketplace I use for my own research and engineering workf
 
 In Claude Code:
 
-```
+```bash
+# Register this repo as a plugin marketplace
 /plugin marketplace add yejh123/agent-toolkit
+
+# Install the software-development plugin from the marketplace
 /plugin install software-development@agent-toolkit
+
+# Install the note-generator plugin from the marketplace
+/plugin install note-generator@agent-toolkit
+
+# Install the note-generator-cn plugin from the marketplace
+/plugin install note-generator-cn@agent-toolkit
+
+# Install the daily-logistics plugin from the marketplace
+/plugin install daily-logistics@agent-toolkit
 ```
-
-Swap in any plugin name from the table below.
-
-| Plugin | Purpose | Skills |
-|---|---|---|
-| [`software-development`](#software-development) | Coding workflow | 13 |
-| [`note-generator`](#note-generator) | Reading notes (EN) | 5 |
-| [`note-generator-cn`](#note-generator-cn) | Reading notes (中文) | 6 |
-| [`research`](#research) | Academic writing | 3 |
-| [`daily-logistics`](#daily-logistics) | Forms, slides, sheets | 3 |
 
 ### From a local clone
 
@@ -47,8 +49,11 @@ Swap in any plugin name from the table below.
 git clone https://github.com/yejh123/agent-toolkit.git
 ```
 
-```
+```bash
+# Register this repo as a plugin marketplace
 /plugin marketplace add ./agent-toolkit
+
+# Install the software-development plugin from the marketplace
 /plugin install software-development@agent-toolkit
 ```
 
