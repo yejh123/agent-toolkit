@@ -49,7 +49,7 @@ Formatting and prose conventions for all proposal artifacts.
 ## 6 Prose style
 
 - **Active voice preferred.** "We trained..." not "Training was conducted...".
-- **Concrete over abstract.** "20% misalignment rate" rather than "substantial misalignment rate".
+- **Concrete over abstract.** "20% accuracy drop" rather than "substantial accuracy drop".
 - **One claim per sentence** in the abstract and contributions sections. Reviewers skim these; pack one claim per sentence.
 
 ## 7 AI clichés to avoid (bilingual)

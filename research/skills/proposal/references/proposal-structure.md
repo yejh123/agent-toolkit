@@ -21,7 +21,7 @@ A proposal has two structural layers:
 A typical full proposal has these top-level chapters:
 
 - **Overview.** Single self-contained chapter holding the proposal's spine: motivation, project structure (track definitions if multi-track), research questions, contributions, implications, scope, roadmap summary, document map.
-- **Related Work.** Topic-organized literature review. See the `ml-related-work-document` skill.
+- **Related Work.** Topic-organized literature review. See the `related-work` skill.
 - **Methods.** Training setup, evaluation setup, additional methodology as needed. May split into multiple method chapters.
 - **Experimental Plan.** Per-track experimental matrix and submission plan. One chapter per track if multi-track.
 - **Roadmap.** Month-by-month timeline with decision points and go / no-go thresholds.

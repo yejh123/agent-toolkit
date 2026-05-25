@@ -1,6 +1,6 @@
 # Verification Policy
 
-The central rule: **read primary sources before writing entries**. No hallucinations.
+The central rule: **read primary sources before writing entries, and verify every claim against them**. Marking uncertainty is a last resort, not a shortcut. No hallucinations.
 
 ## What counts as a primary source
 
@@ -43,22 +43,22 @@ After fetching:
 
 This typically takes 5–10 minutes per paper for a competent skim.
 
-## `[verify]` notation
+## `[verify]` notation — a last resort
 
-When uncertain about a specific claim, use one of these markers:
+A marker is not a shortcut for skipping verification. Reach for one only after a genuine attempt to confirm the claim has failed: you tried the fetch routes above, searched the source for the specific number or section, and still cannot confirm it. Then mark rather than guess:
 
-- `[verify §X]` — claim is correct but section number is uncertain
-- `[verify]` — entire bullet is uncertain (e.g., extracted from snippet, not from source)
-- `[verify — original not accessible]` — paper could not be fetched at all
-- `[verify quantitative result]` — claim contains a number that wasn't directly verified
+- `[verify §X]` — the claim is correct but the section number is uncertain
+- `[verify]` — the bullet could not be confirmed against the source
+- `[verify — original not accessible]` — the paper could not be fetched by any route
+- `[verify quantitative result]` — a number that could not be confirmed against the source
 
-The user can search for `[verify]` markers in the final document and resolve them manually. This is far better than fabricating a section number.
+The user resolves markers manually, so an honest marker beats a fabricated section number or invented result. But a document full of markers signals the verification effort was not made — markers should be the rare residual, not the norm.
 
 ## When to be especially careful
 
 - **arXiv IDs.** Models often invent plausible-looking IDs. Always cross-check by attempting a fetch.
 - **Author lists.** Authors often have similar names; do not assume. Cite by first author + et al. and verify against the paper.
-- **Quantitative results.** "20% misalignment rate" is a specific verifiable claim. Confirm the exact percentage from the source, not from memory.
+- **Quantitative results.** "20% accuracy drop" is a specific verifiable claim. Confirm the exact percentage from the source, not from memory.
 - **Section structure.** Different papers number sections differently (some use 1.1.1, some use 1.A, some use Roman). Use the paper's actual structure.
 - **Venue and year.** Acceptance does not equal publication year (e.g., a paper accepted at ICLR 2026 in October 2025 should be cited as `ICLR 2026`, not `2025`).
 
@@ -67,7 +67,7 @@ The user can search for `[verify]` markers in the final document and resolve the
 If two sources give different details for the same paper (e.g., arXiv v1 vs v2):
 
 - Prefer the latest arXiv version unless the user is citing a specific earlier version.
-- Note the discrepancy in the entry: `(v1 reports 12% misalignment, v2 reports 14% after extended evaluation)`.
+- Note the discrepancy in the entry: `(v1 reports 12% error rate, v2 reports 14% after extended evaluation)`.
 - Default to the conference camera-ready version if available.
 
 ## Verification checklist before finalizing
@@ -84,6 +84,6 @@ Before declaring a section complete, run through:
 
 ## Why this matters
 
-Reviewers in ML safety / alignment will spot-check related-work claims. A single fabricated section reference or invented arXiv ID undermines the credibility of the entire document. Marking `[verify]` is preferred over guessing because the user can resolve markers, but cannot resolve unmarked fabrications.
+Reviewers will spot-check related-work claims. A single fabricated section reference or invented arXiv ID undermines the credibility of the entire document. Marking `[verify]` is preferred over guessing because the user can resolve markers, but cannot resolve unmarked fabrications.
 
 Investing 5–10 minutes per paper in primary-source verification is cheap relative to the cost of a reviewer catching one fabrication.

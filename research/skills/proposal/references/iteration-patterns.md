@@ -83,7 +83,7 @@ A hypothesis predicts direction but not magnitude. Reviewers cannot evaluate whe
 - **Right response:** add a separate hypothesis labeled "(calibration / effect size)" that predicts magnitude with reasoning. Cite the prior-work effect size you are comparing against.
 
 **Wrong-form sentence:** `[Training type X] increases [behavior Y].`
-**Right-form sentence:** `Effect sizes are smaller than [comparison condition] ([cited prior-work effect size]) but statistically significant, because [partial-inoculation reason citing the relevant control condition].`
+**Right-form sentence:** `Effect sizes are smaller than [comparison condition] ([cited prior-work effect size]) but statistically significant, because [partial-mitigation reason citing the relevant control condition].`
 
 This makes the proposal pre-registered and falsifiable.
 
@@ -96,8 +96,8 @@ The implications section reads as restating the contributions in present tense.
 - **Wrong response:** rephrase the contributions with words like "important" and "warrants attention".
 - **Right response:** convert each implication into a concrete architectural recommendation that names mechanism, comparison class, and the design constraint it implies.
 
-**Wrong-form sentence:** `[Training paradigm] warrant pre-deployment safety auditing.` (vague: no mechanism, no comparison)
-**Right-form sentence:** `[Training paradigm], currently treated as [low-risk class] relative to [comparison class], may transfer to safety-relevant downstream behaviors and warrants pre-deployment safety auditing alongside [comparison class] methods.` (specifies relative risk, mechanism path, and design constraint)
+**Wrong-form sentence:** `[Training paradigm] warrants additional pre-deployment evaluation.` (vague: no mechanism, no comparison)
+**Right-form sentence:** `[Training paradigm], currently treated as [low-risk class] relative to [comparison class], may transfer to [downstream behaviors of concern] and warrants pre-deployment evaluation alongside [comparison class] methods.` (specifies relative risk, mechanism path, and design constraint)
 
 A second example for a system-design implication:
 

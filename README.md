@@ -79,8 +79,8 @@ See the [official plugin docs](https://code.claude.com/docs/en/discover-plugins)
 
 | Skill | Description |
 |---|---|
-| [`research-proposal`](research/skills/proposal/SKILL.md) | Research proposal drafting |
-| [`ml-related-work-document`](research/skills/related-work/SKILL.md) | Related-work document |
+| [`proposal`](research/skills/proposal/SKILL.md) | Research proposal drafting |
+| [`related-work`](research/skills/related-work/SKILL.md) | Related-work document |
 | [`paper-write`](research/skills/writing-paper/SKILL.md) | Paper drafting for NeurIPS / ICML / ICLR / ACL |
 
 </details>

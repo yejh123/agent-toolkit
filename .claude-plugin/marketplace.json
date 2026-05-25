@@ -9,7 +9,7 @@
       "name": "research",
       "source": "./research",
       "description": "Academic research and writing pipeline: research proposal drafting, related-work document construction, and ML/AI paper writing.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "Jingheng Ye"
       }

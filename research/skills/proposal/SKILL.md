@@ -1,5 +1,5 @@
 ---
-name: research-proposal
+name: proposal
 description: "Write or iterate on a research proposal for ML/AI research. Use when the user requests drafting, refining, or restructuring a proposal, including motivation, research questions, hypotheses, novelty assessment, contributions, implications, scope, and roadmap. Supports single-track and multi-track proposals. Triggers on: write research proposal, iterate on proposal, refine RQ, rewrite motivation, novelty assessment, plan publication strategy, 写研究计划, 完善 RQ, 修改 motivation."
 ---
 
